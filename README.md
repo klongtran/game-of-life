@@ -1,4 +1,4 @@
-Comp 124: Game of Life Lab
+Comp 124: Main.Game of Life Lab
 ====
 
 This lab was originally developed by Michael Ekstrand (ekstrand@cs.umn.edu) and is used with his permission.
@@ -8,10 +8,10 @@ Paul Cantrell (paul@innig.net) rewrote the lab for GitHub and added a bit of fla
 Thanks to everybody who contributed!
 
 
-The Game of Life
+The Main.Game of Life
 ---
 
-The Game of Life is a mathematical “zero-player” game devised by John Conway. It simulates the behavior of populations following simple rules.  Life is played on a grid of cells. Each cell can be either alive or dead.  The game progresses in a series of iterations, called generations.  In each generation, the value of a cell (whether it is alive or dead) is determined by the value of that cell and its neighbors in the previous generation using the following rules:
+The Main.Game of Life is a mathematical “zero-player” game devised by John Conway. It simulates the behavior of populations following simple rules.  Life is played on a grid of cells. Each cell can be either alive or dead.  The game progresses in a series of iterations, called generations.  In each generation, the value of a cell (whether it is alive or dead) is determined by the value of that cell and its neighbors in the previous generation using the following rules:
 
 - If a living cell has less than 2 living neighbors, it will die (of loneliness).
 - If a living cell has more than 3 living neighbors, it will die (it’s overcrowded).
@@ -24,7 +24,7 @@ For more information on Life, the [Wikipedia article on the topic](http://en.wik
 Overview
 ---
 
-You start this lab with an existing project, which provides a nice user interface for the Game of Life — but the rules are missing!
+You start this lab with an existing project, which provides a nice user interface for the Main.Game of Life — but the rules are missing!
 You will have the following tasks:
 
 - Implement Conway’s rules.
@@ -34,7 +34,7 @@ You will have the following tasks:
 Implementing Conway’s Rules
 ---
 
-Your first task is to implement Conway’s rules for the Game of Life. These are the rules described above in the game description.
+Your first task is to implement Conway’s rules for the Main.Game of Life. These are the rules described above in the game description.
 
 Conway.java contains a method, applyRules(), which will be used by the game board to compute the next state in each generation. applyRules() takes two parameters - a boolean value representing the cell’s current value, and an integer representing the number of living neighbors the cell has. It must return the value for that cell in the next generation. true represents a living cell, and false represents a dead cell.
 
